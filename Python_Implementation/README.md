@@ -53,30 +53,29 @@ python VM_Master.py
 
 ## 🕹️ Menu Options
 When the script runs, you will see the following numeric options:
-    1. Start all VMs
-        Iterates through your specific VM list.
-        Starts them with --type headless.
-        Note: Adds a 5-second delay between starts to prevent system resource spikes.
-
-    2. Stop all VMs
-        Sends an acpipowerbutton signal to all VMs.
-        This mimics pressing the physical power button, allowing the OS to shut down safely.
-
-    3. Status
-        Lists the names and UUIDs of currently running VMs.
-
-    4. Exit
-        Closes the script.
+1. **Start all VMs**
+    * *Iterates through your specific VM list.*
+    * *Starts them with ```--type headless.```*
+    * *Note: Adds a 5-second delay between starts to prevent system resource spikes.*
+2. **Stop all VMs**
+    * *Sends an ```acpipowerbutton``` signal to all VMs.*
+    * *This mimics pressing the physical power button, allowing the OS to shut down safely.*
+3. **Status**
+    * *Lists the names and UUIDs of currently running VMs.*
+4. **Exit**
+    * *Closes the script.*
 
 ---
 
 ## 🛠️ Troubleshooting
-    Error: 'VBoxManage' is not recognized...
-    This means VirtualBox is not in your System Path.
-        Fix: Add C:\Program Files\Oracle\VirtualBox (or your specific installation path) to your Windows Environment Variables.
+Error: ```'VBoxManage' is not recognized...```
 
-    Error: Python not found
-        Fix: Ensure you have checked "Add Python to PATH" during the Python installation process.
+* This means VirtualBox is not in your System Path.
+* **Fix:** Add ```C:\Program Files\Oracle\VirtualBox``` (or your specific installation path) to your Windows Environment Variables.
+
+Error: ```Python not found```
+
+* **Fix:** Ensure you have checked "Add Python to PATH" during the Python installation process.
 
 ---
 
