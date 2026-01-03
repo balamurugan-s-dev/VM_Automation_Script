@@ -30,7 +30,7 @@ Located in the `Batch_Scripts` folder (rename to your actual folder name).
 
 1.  Clone this repository:
     ```bash
-    git clone [https://github.com/balamurugan-s-dev/VM_Automation_Script](https://github.com/balamurugan-s-dev/VM_Automation_Script)
+    git clone [https://github.com/balamurugan-s-dev/VM_Automation_Script.git](https://github.com/balamurugan-s-dev/VM_Automation_Script.git)
     ```
 2.  Navigate to the folder that matches your preference (Python or Batch).
 3.  Follow the specific `README.md` inside that folder for setup instructions.
