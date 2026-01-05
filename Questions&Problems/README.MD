@@ -3,7 +3,6 @@
 A lightweight Python automation tool to manage multiple Oracle VirtualBox Virtual Machines (VMs) using `VBoxManage`.  
 Designed for **headless environments**, home labs, and server-style VM management.
 
----
 
 ## 📌 Features
 
@@ -13,7 +12,6 @@ Designed for **headless environments**, home labs, and server-style VM managemen
 - Designed for automation (CLI / scripts)
 - No GUI dependency for normal operation
 
----
 
 ## ⚙️ Prerequisites
 
@@ -28,7 +26,6 @@ VBoxManage --version
 python --version
 ````
 
----
 
 ## 🧠 How It Works
 
@@ -48,7 +45,6 @@ The script:
     "test3"     {uuid}
     "VPS"       {uuid}
 ```
----
 
 ## ▶️ Starting a VM (Headless)
 
@@ -68,8 +64,6 @@ The script:
     VM "test1" has been successfully started.
 ```
 
----
-
 ## ⏹️ Stopping a VM (Graceful)
 
 ```bash
@@ -82,7 +76,6 @@ The script:
 ```
 This sends a virtual power button press to the guest OS.
 
----
 
 ## ⚠️ Important: ACPI Shutdown Issue (GUI VMs)
 **❌ Problem**
@@ -108,7 +101,6 @@ Some VMs do not shut down when using:
 - Or only works after logging in
 - GUI shutdown button may appear but does nothing
 
----
 
 ## ✅ Correct Solution (Recommended)
 
@@ -131,7 +123,6 @@ Configure the VM to boot into CLI first, like a server.
     sudo reboot
 ```
 
----
 
 ## 🎯 Result After Fix
 - VM starts headless
@@ -142,7 +133,6 @@ Configure the VM to boot into CLI first, like a server.
 
 This makes the VM behave like a real headless server.
 
----
 
 ## ❗ What NOT to Do
 Avoid using:
@@ -151,7 +141,6 @@ Avoid using:
 ```
 This is a hard power cut and can corrupt the VM.
 
----
 
 ## 🧩 Why Other CLI VMs Worked Fine
 CLI-only VMs:
@@ -161,7 +150,6 @@ CLI-only VMs:
 
 Hence, ACPI shutdown works instantly.
 
----
 
 ## 🧪 Tested Scenario
 
@@ -170,9 +158,6 @@ Hence, ACPI shutdown works instantly.
 - Guest OS: Linux (CLI & GUI variants)
 - Mode: Headless
 
----
 
 ## 📜 License
 This is only for educational purpose. Use, modify, and automate freely.
-
----
